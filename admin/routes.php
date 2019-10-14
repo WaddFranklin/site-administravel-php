@@ -1,10 +1,10 @@
 <?php
 
 if(resolve('/admin')) {
-    echo 'administração';
+    render('admin/home', 'admin');
 }
 elseif(resolve('/admin/pages')) {
-    echo 'administração de páginas';
+    render('admin/pages', 'admin');
 }
 else {
     echo 'Página não encontrada';
