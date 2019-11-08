@@ -1,1 +1,5 @@
-alert("<?php echo $data['type']; ?>" + " - " + "<?php echo $data['message']; ?>")
+new PNotify({
+    title: 'SUCESSO!',
+    text: '<?php echo $data['message']; ?>',
+    type: '<?php echo $data['type']; ?>'
+});
